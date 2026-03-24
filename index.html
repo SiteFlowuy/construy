@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcción y Reformas en Uruguay | Steel Framing & Wood Frame</title>
+    <meta name="description" content="Empresa de construcción moderna en Uruguay. Especialistas en Steel Framing, Wood Frame, Drywall y reformas integrales. Solicitá tu presupuesto sin cargo.">
+    <meta name="keywords" content="construcción en Uruguay, steel framing Uruguay, wood frame Uruguay, reformas y construcción, drywall, decks de madera">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#F97316',
+                            orangeDark: '#EA580C',
+                            dark: '#111827',
+                            gray: '#374151',
+                            light: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-brand-dark antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="hard-hat" class="text-brand-orange w-8 h-8"></i>
+                    <span class="font-bold text-xl tracking-tight">Construy<span class="text-brand-orange">UY</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicios" class="text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors">Servicios</a>
+                    <a href="#nosotros" class="text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors">Nosotros</a>
+                    <a href="#proyectos" class="text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors">Proyectos</a>
+                    <a href="https://wa.me/123456789" target="_blank" class="bg-brand-orange hover:bg-brand-orangeDark text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-md shadow-orange-500/20 flex items-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        Presupuesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Steel Framing Uruguay" class="w-full h-full object-cover opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-up">
+            <div class="text-center max-w-4xl mx-auto">
+                <span class="text-brand-orange font-semibold tracking-wider uppercase text-sm mb-4 block">Innovación en Construcción</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Construcción moderna y <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-red-500">eficiente</span> en Uruguay
+                </h1>
+                <p class="text-lg lg:text-xl text-brand-gray mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Especialistas en Steel Framing, Wood Frame y reformas integrales. Materializamos tu proyecto con rapidez, calidad superior y previsibilidad garantizada.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://wa.me/123456789" class="w-full sm:w-auto bg-brand-orange hover:bg-brand-orangeDark text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all shadow-lg shadow-orange-500/30 flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Contactar por WhatsApp
+                    </a>
+                    <a href="#servicios" class="w-full sm:w-auto bg-white border border-gray-200 hover:border-brand-orange hover:text-brand-orange px-8 py-4 rounded-xl font-medium text-lg transition-all text-brand-gray flex items-center justify-center gap-2">
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Nuestros Servicios</h2>
+                <p class="text-brand-gray max-w-2xl mx-auto text-lg">Soluciones constructivas de vanguardia adaptadas a las exigencias climáticas y normativas del Uruguay.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 fade-up">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="frame" class="w-7 h-7 text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Steel Framing</h3>
+                    <p class="text-gray-600 mb-4">Construcción en seco con perfiles de acero galvanizado. Mayor rapidez, aislamiento térmico superior y estructura antisísmica.</p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 fade-up">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="trees" class="w-7 h-7 text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wood Frame</h3>
+                    <p class="text-gray-600 mb-4">Sistema sustentable de entramado de madera. Excelente confort térmico, bajo impacto ambiental y tiempos de obra reducidos.</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 fade-up">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="layers" class="w-7 h-7 text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Drywall</h3>
+                    <p class="text-gray-600 mb-4">Tabiques y cielorrasos en placa de yeso. Ideal para reformas rápidas, divisiones limpias y diseños de iluminación integrados.</p>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 fade-up">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="layout-panel-top" class="w-7 h-7 text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Decks de Madera</h3>
+                    <p class="text-gray-600 mb-4">Diseño e instalación de decks para exteriores. Maderas tratadas de alta resistencia para embellecer patios y piscinas.</p>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 fade-up">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="paint-roller" class="w-7 h-7 text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pintura Profesional</h3>
+                    <p class="text-gray-600 mb-4">Terminaciones impecables para interiores y exteriores. Tratamiento de humedades y revestimientos texturados.</p>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 fade-up">
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="fan" class="w-7 h-7 text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Climatización</h3>
+                    <p class="text-gray-600 mb-4">Instalación certificada de aires acondicionados. Canalizaciones ocultas durante la obra para una estética perfecta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre la Empresa & Beneficios -->
+    <section id="nosotros" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Solidez y confianza en cada metro cuadrado</h2>
+                    <p class="text-lg text-brand-gray mb-6">Somos una empresa 100% uruguaya comprometida con revolucionar la forma en que construimos. Dejamos atrás los dolores de cabeza de la obra tradicional para ofrecerte previsibilidad absoluta.</p>
+                    
+                    <div class="space-y-6 mt-8">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-light flex items-center justify-center text-brand-orange">
+                                <i data-lucide="zap" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Construcción Rápida</h4>
+                                <p class="text-gray-600">Reducimos los tiempos de obra hasta en un 60% comparado con sistemas tradicionales.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-light flex items-center justify-center text-brand-orange">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Materiales Modernos</h4>
+                                <p class="text-gray-600">Alta eficiencia energética y acústica, lo que se traduce en menor gasto mensual.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-light flex items-center justify-center text-brand-orange">
+                                <i data-lucide="handshake" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Presupuesto Cerrado</h4>
+                                <p class="text-gray-600">Asesoramiento personalizado. Lo que presupuestamos es lo que pagás, sin sorpresas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative fade-up delay-100">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Arquitectura moderna" class="rounded-2xl shadow-2xl object-cover h-[600px] w-full">
+                    <div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-2xl shadow-xl hidden md:block border border-gray-100">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl font-black text-brand-orange">10+</div>
+                            <div class="text-sm font-semibold text-gray-600 uppercase tracking-wide">Años de<br>Experiencia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="py-24 bg-brand-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Nuestro Proceso de Trabajo</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Simple, transparente y orientado a tu tranquilidad.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-800 -z-10 -translate-y-1/2"></div>
+                
+                <div class="text-center fade-up">
+                    <div class="w-16 h-16 mx-auto bg-brand-orange text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-[0_0_0_8px_rgba(17,24,39,1)]">1</div>
+                    <h4 class="font-bold text-xl mb-2">Contacto</h4>
+                    <p class="text-gray-400 text-sm">Nos contás tu idea por WhatsApp o email.</p>
+                </div>
+                
+                <div class="text-center fade-up delay-100">
+                    <div class="w-16 h-16 mx-auto bg-gray-800 text-white border-2 border-brand-orange rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-[0_0_0_8px_rgba(17,24,39,1)]">2</div>
+                    <h4 class="font-bold text-xl mb-2">Presupuesto</h4>
+                    <p class="text-gray-400 text-sm">Visitamos el lugar y armamos una propuesta a medida.</p>
+                </div>
+                
+                <div class="text-center fade-up delay-200">
+                    <div class="w-16 h-16 mx-auto bg-gray-800 text-white border-2 border-brand-orange rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-[0_0_0_8px_rgba(17,24,39,1)]">3</div>
+                    <h4 class="font-bold text-xl mb-2">Ejecución</h4>
+                    <p class="text-gray-400 text-sm">Manos a la obra con supervisión técnica constante.</p>
+                </div>
+                
+                <div class="text-center fade-up delay-300">
+                    <div class="w-16 h-16 mx-auto bg-gray-800 text-white border-2 border-brand-orange rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-[0_0_0_8px_rgba(17,24,39,1)]">4</div>
+                    <h4 class="font-bold text-xl mb-2">Entrega</h4>
+                    <p class="text-gray-400 text-sm">Llave en mano, obra limpia y en la fecha acordada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería / Proyectos -->
+    <section id="proyectos" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Proyectos Destacados</h2>
+                <p class="text-brand-gray max-w-2xl mx-auto text-lg">Calidad visible en cada detalle de nuestras terminaciones.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] fade-up">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior moderno drywall" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium text-lg">Interiores / Drywall</span>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] fade-up delay-100">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vivienda Steel Framing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium text-lg">Steel Framing Residencial</span>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] fade-up delay-200">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deck de madera exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium text-lg">Decks y Exteriores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-24 bg-brand-orange relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">¿Listo para empezar tu obra?</h2>
+            <p class="text-orange-100 text-xl mb-10">Solicitá tu presupuesto sin cargo hoy mismo. Respondemos rápido.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/123456789" class="bg-white text-brand-orange hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    Chatear por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2 text-white">
+                    <i data-lucide="hard-hat" class="text-brand-orange w-6 h-6"></i>
+                    <span class="font-bold text-lg tracking-tight">Construy<span class="text-brand-orange">UY</span></span>
+                </div>
+                <div class="text-sm">
+                    &copy; 2026 ConstruyUY. Todos los derechos reservados. Construcción moderna en Uruguay.
+                </div>
+                <div class="flex gap-4">
+                    <a href="mailto:contacto@construyuy.com.uy" class="hover:text-white transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/123456789" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+        <span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-brand-dark px-3 py-1.5 rounded-lg text-sm font-semibold shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+            ¡Pedí tu presupuesto!
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
