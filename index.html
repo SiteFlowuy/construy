@@ -24,23 +24,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
+     <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            orange: '#f38116',
-                            orangeDark: '#d96d0f',
-                            dark: '#0f172a',
-                            gray: '#64748b',
-                            light: '#f8fafc'
-                        }
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        orange: '#C96A1B',
+                        orangeDark: '#A95514',
+                        dark: '#0B1220',
+                        gray: '#475569',
+                        light: '#F8FAFC',
+                        soft: '#E2E8F0'
                     }
                 }
             }
         }
-</script>
+    }
+    </script>
     
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -78,10 +84,10 @@
 >
 
     <!-- Overlay oscuro suave -->
-    <div class="absolute inset-0 bg-black/35"></div>
+    <div class="absolute inset-0 bg-[#0B1220]/55"></div>
 
     <!-- Degradado para que el texto respire -->
-    <div class="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-black/10"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B1220]/80 via-[#0B1220]/40 to-[#0B1220]/15"></div>
 
     <!-- Degradado inferior suave -->
     <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white via-white/60 to-transparent"></div>
@@ -118,6 +124,9 @@
           Ver servicios
         </a>
       </div>
+      <p class="text-white/75 text-sm mt-5">
+    Asesoramiento personalizado · Presupuesto sin cargo · Respuesta rápida
+</p>
     </div>
   </div>
 </section>
@@ -332,7 +341,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-2 text-white">
                     <i data-lucide="hard-hat" class="text-brand-orange w-6 h-6"></i>
-                    <span class="font-bold text-lg tracking-tight">FrameSurUY<span class="text-brand-orange">UY</span></span>
+                    <span class="font-bold text-lg tracking-tight">FRAME SUR <span class="text-brand-orange">UY</span></span>
                 </div>
                 <div class="text-sm">
                     &copy; 2026 FrameSurUY. Todos los derechos reservados. Construcción moderna en Uruguay.
@@ -355,6 +364,9 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script type="module" src="app.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
