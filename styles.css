@@ -7,6 +7,27 @@
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Hero direct CSS animation (no IntersectionObserver) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-animate {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+/* Hero image base position */
+.hero-custom-img {
+    object-position: center center;
+}
+
 @media (max-width: 768px) {
   .hero-custom-img {
     object-position: center 70%;
@@ -47,4 +68,63 @@
 }
 .fixed.bottom-6.right-6:hover {
     animation: none;
+}
+
+/* Hamburger → X animation */
+#menu-toggle .hamburger-line {
+    transform-origin: center;
+}
+#menu-toggle.is-open .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#menu-toggle.is-open .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+#menu-toggle.is-open .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* FAQ Accordion */
+.faq-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: #F97316;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+/* Sticky CTA mobile padding */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 80px;
+    }
 }

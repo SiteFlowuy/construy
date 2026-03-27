@@ -6,7 +6,11 @@
     <title>FRAME SUR UY | Steel Framing & Wood Frame</title>
     <meta name="description" content="Empresa de construcción moderna en Uruguay. Especialistas en Steel Framing, Wood Frame, Drywall y reformas integrales. Solicitá tu presupuesto sin cargo.">
     <meta name="keywords" content="construcción en Uruguay, steel framing Uruguay, wood frame Uruguay, reformas y construcción, drywall, decks de madera">
-    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FRAME SUR UY | Steel Framing & Wood Frame">
+    <meta property="og:description" content="Especialistas en Steel Framing, Wood Frame y reformas integrales en Uruguay.">
+    <meta property="og:url" content="https://framesuruy.com">
+
         <!-- Favicon -->
 
    <link rel="icon" href="favicon.ico">
@@ -49,6 +53,23 @@
     </script>
     
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Frame Sur UY",
+      "description": "Especialistas en Steel Framing, Wood Frame, Drywall y reformas en Uruguay.",
+      "url": "https://framesuruy.com",
+      "telephone": "REEMPLAZAR",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UY"
+      },
+      "priceRange": "$$",
+      "openingHours": "Mo-Fr 08:00-18:00"
+    }
+    </script>
 </head>
 <body class="bg-white text-brand-dark antialiased">
 
@@ -65,6 +86,24 @@
                     <a href="#nosotros" class="text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors">Nosotros</a>
                     <a href="#proyectos" class="text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors">Proyectos</a>
                     <a href="https://wa.me/123456789" target="_blank" class="bg-brand-orange hover:bg-brand-orangeDark text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-md shadow-orange-500/20 flex items-center gap-2">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        Presupuesto
+                    </a>
+                </div>
+                <!-- Hamburger button (mobile only) -->
+                <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none" aria-label="Abrir menú">
+                    <span class="hamburger-line block w-6 bg-brand-dark transition-all duration-300" style="height:2px"></span>
+                    <span class="hamburger-line block w-6 bg-brand-dark transition-all duration-300" style="height:2px"></span>
+                    <span class="hamburger-line block w-6 bg-brand-dark transition-all duration-300" style="height:2px"></span>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100">
+                <div class="px-2 py-4 flex flex-col gap-1">
+                    <a href="#servicios" class="mobile-menu-link text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors py-2.5 px-3 rounded-lg hover:bg-gray-50">Servicios</a>
+                    <a href="#nosotros" class="mobile-menu-link text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors py-2.5 px-3 rounded-lg hover:bg-gray-50">Nosotros</a>
+                    <a href="#proyectos" class="mobile-menu-link text-sm font-medium text-brand-gray hover:text-brand-orange transition-colors py-2.5 px-3 rounded-lg hover:bg-gray-50">Proyectos</a>
+                    <a href="https://wa.me/123456789" target="_blank" class="mobile-menu-link mt-2 bg-brand-orange hover:bg-brand-orangeDark text-white px-5 py-3 rounded-lg text-sm font-semibold transition-all shadow-md shadow-orange-500/20 flex items-center gap-2 justify-center">
                         <i data-lucide="message-circle" class="w-4 h-4"></i>
                         Presupuesto
                     </a>
@@ -94,7 +133,7 @@
   </div>
 
   <!-- Contenido -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full fade-up">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full hero-animate">
     <div class="text-center max-w-4xl mx-auto">
       <span class="inline-block bg-white/10 backdrop-blur-md text-white font-semibold tracking-wider uppercase text-xs px-4 py-2 rounded-full mb-4">
     Innovación en Construcción
@@ -197,6 +236,132 @@
         </div>
     </section>
 
+    <!-- Comparativa -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <span class="inline-block uppercase tracking-wider text-brand-orange text-xs font-semibold mb-3">¿Por qué elegir construcción en seco?</span>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-3">Steel Framing y Wood Frame vs. Construcción tradicional</h2>
+                <p class="text-brand-gray text-lg">Una comparativa honesta para que tomes la mejor decisión.</p>
+            </div>
+
+            <div class="fade-up overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+                <table class="w-full min-w-[600px] border-collapse">
+                    <thead>
+                        <tr class="bg-brand-dark text-white">
+                            <th class="py-4 px-6 text-left text-sm font-semibold">Característica</th>
+                            <th class="py-4 px-6 text-left text-sm font-semibold">Steel / Wood Frame</th>
+                            <th class="py-4 px-6 text-left text-sm font-semibold">Construcción Tradicional</th>
+                            <th class="py-4 px-6 text-left text-sm font-semibold">Ventaja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white">
+                            <td class="py-4 px-6 text-sm text-brand-gray">Tiempo de obra</td>
+                            <td class="py-4 px-6 text-sm font-medium text-brand-dark">2–4 meses</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">8–18 meses</td>
+                            <td class="py-4 px-6 text-sm font-bold text-brand-orange">✓ Frame</td>
+                        </tr>
+                        <tr class="bg-brand-light">
+                            <td class="py-4 px-6 text-sm text-brand-gray">Previsibilidad de costos</td>
+                            <td class="py-4 px-6 text-sm font-medium text-brand-dark">Presupuesto cerrado</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">Variables e impredecibles</td>
+                            <td class="py-4 px-6 text-sm font-bold text-brand-orange">✓ Frame</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-4 px-6 text-sm text-brand-gray">Aislamiento térmico</td>
+                            <td class="py-4 px-6 text-sm font-medium text-brand-dark">Superior (paneles SIP)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">Estándar</td>
+                            <td class="py-4 px-6 text-sm font-bold text-brand-orange">✓ Frame</td>
+                        </tr>
+                        <tr class="bg-brand-light">
+                            <td class="py-4 px-6 text-sm text-brand-gray">Resistencia sísmica</td>
+                            <td class="py-4 px-6 text-sm font-medium text-brand-dark">Alta (estructura flexible)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">Media</td>
+                            <td class="py-4 px-6 text-sm font-bold text-brand-orange">✓ Frame</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-4 px-6 text-sm text-brand-gray">Impacto ambiental</td>
+                            <td class="py-4 px-6 text-sm font-medium text-brand-dark">Bajo (menos residuos)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">Alto</td>
+                            <td class="py-4 px-6 text-sm font-bold text-brand-orange">✓ Frame</td>
+                        </tr>
+                        <tr class="bg-brand-light">
+                            <td class="py-4 px-6 text-sm text-brand-gray">Humedad en obra</td>
+                            <td class="py-4 px-6 text-sm font-medium text-brand-dark">Mínima (construcción seca)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">Alta</td>
+                            <td class="py-4 px-6 text-sm font-bold text-brand-orange">✓ Frame</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <span class="inline-block uppercase tracking-wider text-brand-orange text-xs font-semibold mb-3">Preguntas frecuentes</span>
+                <h2 class="text-3xl lg:text-4xl font-bold">Todo lo que necesitás saber antes de empezar</h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto flex flex-col gap-3 fade-up">
+
+                <article class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-btn">
+                        <span>¿Es más caro construir en Steel o Wood Frame?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">No necesariamente. El costo por m² es similar al tradicional, pero ahorrás en tiempos de obra y gastos mensuales por mejor aislamiento.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-btn">
+                        <span>¿Qué tan resistentes son estas construcciones en Uruguay?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Están diseñadas para soportar vientos fuertes, humedad costera y sismos. Cumplen normativa uruguaya vigente.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-btn">
+                        <span>¿Cuánto tarda una vivienda de 80m²?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Entre 2 y 4 meses según complejidad, contra 12–18 meses de la construcción tradicional.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-btn">
+                        <span>¿Se puede ampliar o reformar después?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Sí, es una de las grandes ventajas. Las estructuras en seco permiten modificaciones futuras con facilidad.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-btn">
+                        <span>¿Trabajan en todo Uruguay?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Sí, operamos en Montevideo, Canelones, Maldonado y resto del país según el proyecto.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Sobre la Empresa & Beneficios -->
     <section id="nosotros" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -237,7 +402,7 @@
                 </div>
                 
                 <div class="relative fade-up delay-100">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Arquitectura moderna" class="rounded-2xl shadow-2xl object-cover h-[600px] w-full">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Arquitectura moderna" class="rounded-2xl shadow-2xl object-cover h-[600px] w-full" loading="lazy" decoding="async">
                     <div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-2xl shadow-xl hidden md:block border border-gray-100">
                         <div class="flex items-center gap-4">
                             <div class="text-4xl font-black text-brand-orange">10+</div>
@@ -245,6 +410,35 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="py-20 bg-brand-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+                <div data-counter="120">
+                    <div class="font-black text-5xl text-brand-orange counter-display">0</div>
+                    <div class="text-gray-400 text-sm uppercase tracking-widest mt-2">Proyectos terminados</div>
+                </div>
+
+                <div data-counter="10">
+                    <div class="font-black text-5xl text-brand-orange counter-display">0</div>
+                    <div class="text-gray-400 text-sm uppercase tracking-widest mt-2">Años de experiencia</div>
+                </div>
+
+                <div data-counter="8500">
+                    <div class="font-black text-5xl text-brand-orange counter-display">0</div>
+                    <div class="text-gray-400 text-sm uppercase tracking-widest mt-2">m² construidos</div>
+                </div>
+
+                <div data-counter="100">
+                    <div class="font-black text-5xl text-brand-orange counter-display">0</div>
+                    <div class="text-gray-400 text-sm uppercase tracking-widest mt-2">Presupuesto cumplido</div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -297,24 +491,75 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] fade-up">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior moderno drywall" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior moderno drywall" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" decoding="async">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-medium text-lg">Interiores / Drywall</span>
                     </div>
                 </div>
-                
+
                 <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] fade-up delay-100">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vivienda Steel Framing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vivienda Steel Framing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" decoding="async">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-medium text-lg">Steel Framing Residencial</span>
                     </div>
                 </div>
-                
+
                 <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] fade-up delay-200">
-                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deck de madera exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deck de madera exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" decoding="async">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-medium text-lg">Decks y Exteriores</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <span class="inline-block uppercase tracking-wider text-brand-orange text-xs font-semibold mb-3">Lo que dicen nuestros clientes</span>
+                <h2 class="text-3xl lg:text-4xl font-bold">Resultados que hablan solos</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 fade-up">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                    </div>
+                    <p class="italic text-gray-600 text-sm leading-relaxed mb-6">"Contratamos para hacer el Steel Framing de nuestra casa y quedamos maravillados. En 3 meses teníamos todo listo, algo impensable con construcción tradicional."</p>
+                    <p class="font-bold text-brand-dark">Martín R., <span class="font-normal text-gray-500">Montevideo</span></p>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 fade-up delay-100">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                    </div>
+                    <p class="italic text-gray-600 text-sm leading-relaxed mb-6">"Hicimos el deck de madera para la pileta y superó todas las expectativas. Muy prolijos y cumplieron el plazo acordado."</p>
+                    <p class="font-bold text-brand-dark">Valentina S., <span class="font-normal text-gray-500">Canelones</span></p>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 fade-up delay-200">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-orange fill-current"></i>
+                    </div>
+                    <p class="italic text-gray-600 text-sm leading-relaxed mb-6">"El drywall quedó impecable. Resolvieron todo rápido y el precio fue exactamente el presupuestado, sin sorpresas."</p>
+                    <p class="font-bold text-brand-dark">Diego F., <span class="font-normal text-gray-500">Maldonado</span></p>
                 </div>
             </div>
         </div>
@@ -335,13 +580,83 @@
         </div>
     </section>
 
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="py-24 bg-brand-light">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-3">Solicitá tu presupuesto</h2>
+                <p class="text-brand-gray text-lg">Completá el formulario y te respondemos en menos de 24 horas.</p>
+            </div>
+
+            <div class="fade-up">
+                <!-- Formulario -->
+                <form id="contact-form" action="https://formspree.io/f/REEMPLAZAR" method="POST" class="bg-white rounded-2xl shadow-sm border border-brand-soft p-8 flex flex-col gap-5">
+                    <div>
+                        <label class="block text-sm font-medium text-brand-dark mb-1.5" for="cf-nombre">Nombre completo</label>
+                        <input id="cf-nombre" type="text" name="nombre" required placeholder="Tu nombre"
+                            class="border border-brand-soft rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-orange transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-brand-dark mb-1.5" for="cf-telefono">Teléfono</label>
+                        <input id="cf-telefono" type="tel" name="telefono" required placeholder="09X XXX XXX"
+                            class="border border-brand-soft rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-orange transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-brand-dark mb-1.5" for="cf-email">Email</label>
+                        <input id="cf-email" type="email" name="email" required placeholder="tu@email.com"
+                            class="border border-brand-soft rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-orange transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-brand-dark mb-1.5" for="cf-tipo">Tipo de obra</label>
+                        <select id="cf-tipo" name="tipo_obra" required
+                            class="border border-brand-soft rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-orange transition bg-white text-brand-dark">
+                            <option value="" disabled selected>Seleccioná una opción</option>
+                            <option value="Steel Framing">Steel Framing</option>
+                            <option value="Wood Frame">Wood Frame</option>
+                            <option value="Drywall">Drywall</option>
+                            <option value="Deck de madera">Deck de madera</option>
+                            <option value="Pintura">Pintura</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-brand-dark mb-1.5" for="cf-mensaje">Mensaje</label>
+                        <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Contanos tu proyecto..."
+                            class="border border-brand-soft rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-brand-orange transition resize-none"></textarea>
+                    </div>
+
+                    <button id="cf-submit" type="submit"
+                        class="bg-brand-orange hover:bg-brand-orangeDark text-white font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md shadow-orange-500/20 disabled:opacity-60 disabled:cursor-not-allowed">
+                        Enviar consulta
+                    </button>
+                </form>
+
+                <!-- Mensaje de éxito (oculto por defecto) -->
+                <div id="contact-success" class="hidden bg-white rounded-2xl shadow-sm border border-brand-soft p-10 text-center">
+                    <div class="text-5xl mb-4">✉️</div>
+                    <p class="text-brand-dark font-semibold text-lg">¡Mensaje enviado! Te contactamos pronto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center gap-2 text-white">
-                    <i data-lucide="hard-hat" class="text-brand-orange w-6 h-6"></i>
-                    <span class="font-bold text-lg tracking-tight">FRAME SUR <span class="text-brand-orange">UY</span></span>
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2 text-white">
+                        <i data-lucide="hard-hat" class="text-brand-orange w-6 h-6"></i>
+                        <span class="font-bold text-lg tracking-tight">FRAME SUR <span class="text-brand-orange">UY</span></span>
+                    </div>
+                    <div class="flex items-center gap-1.5 text-gray-400 text-sm">
+                        <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-orange"></i>
+                        <span>099 000 000</span>
+                    </div>
                 </div>
                 <div class="text-sm">
                     &copy; 2026 FrameSurUY. Todos los derechos reservados. Construcción moderna en Uruguay.
@@ -362,11 +677,15 @@
         </span>
     </a>
 
+    <!-- Sticky CTA Mobile -->
+    <div id="sticky-cta" class="hidden fixed bottom-0 w-full bg-white border-t border-gray-200 p-4 z-40 block md:hidden">
+        <a href="https://wa.me/123456789" target="_blank" class="bg-brand-orange text-white rounded-xl py-3 font-semibold w-full flex items-center justify-center">
+            📲 Pedir presupuesto gratis
+        </a>
+    </div>
+
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
 <script type="module" src="app.js"></script>
 </body>
 </html>
